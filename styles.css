@@ -1,0 +1,141 @@
+:root {
+    --azulFuerte: #2196f3;
+    --azulClaro: #6bbef9;
+    --blanco: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--azulFuerte);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header__logo {
+    width: 15rem;
+}
+
+.header__titulo {
+    text-align: center;
+    font-weight: 900;
+    color: var(--blanco);
+    margin-top: 1rem;
+}
+
+.principal {
+    background-color: var(--azulClaro);
+    padding-bottom: 0;
+}
+
+@media (min-width: 772px) {
+    .display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: var(--blanco);
+    height: 50rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.textArea {
+    margin-top: 2rem;
+    width: 100%;
+    height: 40rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.alerta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.boton {
+    background-color: var(--azulFuerte);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: var(--azulClaro);
+}
+
+.contenedor__imagen {
+    margin-top: 5rem;
+}
+
+.imagen__lupa {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor__contenido h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contenedor__contenido p {
+    text-align: center;
+    color: #666;
+}
+
+.contenedor__boton {
+    margin-top: 2rem;
+}
